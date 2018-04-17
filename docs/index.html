@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Optimizely Preview Killer</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      a {
+        background-color: teal;
+        color: white;
+        width: 300px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Optimizely preview killer</h1>
+      <p>This bookmarklet removes the annoying Optimizely QA overlay.</p>
+      <a class="bookmarklet" href="javascript:(function()%7Bvar%20el%20%3D%20document.querySelector('optly-preview')%3Bel.parentNode.removeChild(el)%7D)()">OptlyPreviewKiller</a>
+      <p>Drag this link to your bookmark bar to save, and then click the bookmarklet while previewing a page on optimizely.</p>
+    </div>
+  </body>
+</html>
